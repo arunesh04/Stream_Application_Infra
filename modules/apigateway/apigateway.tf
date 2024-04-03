@@ -19,7 +19,7 @@ resource "aws_api_gateway_rest_api" "products_api" {
       "/product" = {
         post = {
           x-amazon-apigateway-integration = {
-            type                 = "AWS"
+            type                 = "AWS_PROXY"
             httpMethod           = "POST"
             payloadFormatVersion = "1.0"
             uri                  = var.producer_api_arn
@@ -29,7 +29,7 @@ resource "aws_api_gateway_rest_api" "products_api" {
       "/order" = {
         post = {
           x-amazon-apigateway-integration = {
-            type                 = "AWS"
+            type                 = "AWS_PROXY"
             httpMethod           = "POST"
             payloadFormatVersion = "1.0"
             uri                  = var.order_api_arn
