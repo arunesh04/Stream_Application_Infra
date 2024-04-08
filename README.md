@@ -21,7 +21,13 @@ To get started with deploying infrastructure using Terraform, follow these steps
     git clone (https://github.com/arunesh04/Stream_Application_Infra.git)
     ```
 
-3. **Configure Credentials**: If deploying infrastructure on a cloud platform (e.g., AWS, Azure, GCP), ensure that you have the necessary credentials configured locally. Refer to the documentation of the respective cloud provider for instructions on obtaining and configuring credentials.
+3. **Configure AWS Credentials**: Before you can deploy infrastructure on AWS using Terraform, you need to configure your AWS credentials locally. Follow these steps to configure AWS CLI:
+
+    ```bash
+    aws configure
+    ```
+
+    You will be prompted to enter your AWS Access Key ID, Secret Access Key, default region, and output format. Make sure you have appropriate permissions assigned to your AWS IAM user or role for deploying resources.
 
 4. **Initialize Terraform**: Initialize Terraform within the cloned repository directory:
 
