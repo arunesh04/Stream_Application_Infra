@@ -18,7 +18,7 @@ To get started with deploying infrastructure using Terraform, follow these steps
 2. **Clone Repository**: Clone this repository to your local machine using Git:
 
     ```bash
-    git clone https://github.com/your-username/terraform-infrastructure.git
+    git clone (https://github.com/arunesh04/Stream_Application_Infra.git)
     ```
 
 3. **Configure Credentials**: If deploying infrastructure on a cloud platform (e.g., AWS, Azure, GCP), ensure that you have the necessary credentials configured locally. Refer to the documentation of the respective cloud provider for instructions on obtaining and configuring credentials.
@@ -26,7 +26,7 @@ To get started with deploying infrastructure using Terraform, follow these steps
 4. **Initialize Terraform**: Initialize Terraform within the cloned repository directory:
 
     ```bash
-    cd terraform-infrastructure
+    cd Stream_Application_Infra
     terraform init
     ```
 
